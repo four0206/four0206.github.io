@@ -17,7 +17,7 @@
 			<form action="hereisapage.php" method="get">
 				<div id="fn-container" class="form-elem">
 					<label for="FirstName">First Name</label>
-					<input type="text" name="FirstName" id="FirstName" placeholder="Luke" required>
+					<input type="text" name="FirstName" id="FirstName" placeholder="Anakin" required>
 				</div>
 				<div id="ln-container" class="form-elem">
 					<label for="LastName">Last Name</label>
@@ -51,8 +51,8 @@
 						<input type="radio" name="gender-form" id="female" value="female"> Female
 					</label>
 					<label for="nb">
-						<input type="radio" name="gender-form" id="nb" value="nb"> Gender Non-Binary
-					</label>
+						<input type="radio" name="gender-form" id="nonbinary" value="nonbinary"> Gender Non-Binary
+					</label></div><p>
 				</div>
 				<div id="add-container" class="form-elem">
 					<label for="address">Address</label>
@@ -81,15 +81,36 @@
 				<div id="country-drop-container" class="form-elem">
 					<label for="country">Country of Residence</label>
 					<select name="home-cntry" id="home-cntry">
-						<option value="oldrepublic">The Old Republic</option>
-						<option value="galacticrepublic">The Galactic Republic</option>
-						<option value="galacticempire">The Galactic Empire</option>
-						<option value="newrepublic">The New Republic</option>
+						<option value="galactic_republic">The Galactic Republic</option>
+						<option value="galactic_empire">The Galactic Empire</option>
+						<option value="new_republic">The New Republic</option>
 					</select>
 				</div>
 				<div id="postal-code-container" class="form-elem">
 					<label for="postal-code">Postal Code</label>
 					<input type="text" name="postal-code" id="postal-code" placeholder="R2D 2R4">
+				</div>
+				<div id="hobbies-container" class="form-elem">
+					<h3>Hobbies and Interests</h3>
+					<p>Please check all that apply.</p>
+					<label for="meditating">Meditating</label>
+					<input type="checkbox" name="hobbies" id="meditating" value="meditating"><br>
+					<label for="peacekeeping">Peacekeeping</label>
+					<input type="checkbox" name="hobbies" id="peacekeeping" value="peacekeeping"><br>
+					<label for="politics">Politics</label>
+					<input type="checkbox" name="hobbies" id="politics"><br>
+					<label for="fencing">Fencing</label>
+					<input type="checkbox" name="hobbies" id="fencing" checked><br>
+					<label for="podracing">Podracing</label>
+					<input type="checkbox" name="hobbies" id="podracing" checked><br>
+					<label for="piloting">Piloting</label>
+					<input type="checkbox" name="hobbies" id="piloting" value="piloting" checked><br>
+					<label for="engineering">Engineering</label>
+					<input type="checkbox" name="hobbies" id="engineering" value="engineering" checked><br>
+					<label for="brooding">Brooding</label>
+					<input type="checkbox" name="hobbies" id="brooding" checked><br>
+					<label for="protecting-younglings">Protecting Jedi Younglings</label>
+					<input type="checkbox" name="hobbies" id="protecting-younglings">
 				</div>
 			</form>
 		</section> 
