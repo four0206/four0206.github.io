@@ -9,16 +9,19 @@
 	<header id="header">
 </head>
 <body>
+	<header id="header">
+		<h1>Jedi Order Membership Application</h1>
+	</header>
 	<div id="wrapper" class="wrapper">
 		<section id="html-forms" class="main-section">
 			<form action="hereisapage.php" method="get">
 				<div id="fn-container" class="form-elem">
 					<label for="FirstName">First Name</label>
-					<input type="text" name="FirstName" id="FirstName" placeholder="Your first name here">
+					<input type="text" name="FirstName" id="FirstName" placeholder="Luke" required>
 				</div>
 				<div id="ln-container" class="form-elem">
 					<label for="LastName">Last Name</label>
-					<input type="text" name="LastName" id="LastName" placeholder="Your last name here">
+					<input type="text" name="LastName" id="LastName" placeholder="Skywalker" required>
 				</div>
 				<div id="email-container" class="form-elem">
 					<label for="email">Email Address</label>
@@ -36,16 +39,16 @@
 					<label for="dte">Date of Birth</label>
 					<input type="date" name="dte" id="dte"><br>
 					<label for="num">Mobile Number</label>
-					<input type="number" name="num" id="num" min="0000000000" max="9999999999" required>
+					<input type="number" name="num" id="num" min="0000000000" max="9999999999">
 				</div>
 				<div id="radio-container" class="form-elem">
 					<p>Please select your gender.</p>
-					<label for="female">
-						<input type="radio" name="gender-form" id="female"
-						value="female" checked> Female
-					</label>
 					<label for="male">
-						<input type="radio" name="gender-form" id="male" value="male"> Male
+						<input type="radio" name="gender-form" id="male"
+						value="male" checked> Male
+					</label>
+					<label for="female">
+						<input type="radio" name="gender-form" id="female" value="female"> Female
 					</label>
 					<label for="nb">
 						<input type="radio" name="gender-form" id="nb" value="nb"> Gender Non-Binary
@@ -60,7 +63,7 @@
 					<input type="text" name="city" id="city" placeholder="Mos Eisley">
 				</div>
 				<div id="province-drop-container" class="form-elem">
-					<label for="province">Province of Residence:</label><
+					<label for="province">Province of Residence</label>
 					<select name="home-prov" id="home-prov">
 						<option value="tatooine">Tatooine</option>
 						<option value="coruscant">Coruscant</option>
@@ -76,12 +79,17 @@
 					</select>
 				</div>
 				<div id="country-drop-container" class="form-elem">
+					<label for="country">Country of Residence</label>
 					<select name="home-cntry" id="home-cntry">
 						<option value="oldrepublic">The Old Republic</option>
 						<option value="galacticrepublic">The Galactic Republic</option>
 						<option value="galacticempire">The Galactic Empire</option>
 						<option value="newrepublic">The New Republic</option>
 					</select>
+				</div>
+				<div id="postal-code-container" class="form-elem">
+					<label for="postal-code">Postal Code</label>
+					<input type="text" name="postal-code" id="postal-code" placeholder="R2D 2R4">
 				</div>
 			</form>
 		</section> 
