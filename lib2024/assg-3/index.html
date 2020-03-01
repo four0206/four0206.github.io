@@ -6,7 +6,6 @@
 	<meta name="Author" content="Sabrina Fournier">
 	<meta name="description" content="This is my Assignment 3">
 	<meta name="keywords" content="HTML, HTML5, Homework, Assignment, Assignment 3">
-	<header id="header">
 </head>
 <body>
 	<header id="header">
@@ -17,11 +16,11 @@
 			<form action="hereisapage.php" method="get">
 				<div id="fn-container" class="form-elem">
 					<label for="FirstName">First Name</label>
-					<input type="text" name="FirstName" id="FirstName" placeholder="Anakin" required>
+					<input type="text" name="FirstName" id="FirstName" placeholder="Anakin">
 				</div>
 				<div id="ln-container" class="form-elem">
 					<label for="LastName">Last Name</label>
-					<input type="text" name="LastName" id="LastName" placeholder="Skywalker" required>
+					<input type="text" name="LastName" id="LastName" placeholder="Skywalker">
 				</div>
 				<div id="email-container" class="form-elem">
 					<label for="email">Email Address</label>
@@ -50,20 +49,20 @@
 					<label for="female">
 						<input type="radio" name="gender-form" id="female" value="female"> Female
 					</label>
-					<label for="nb">
+					<label for="nonbinary">
 						<input type="radio" name="gender-form" id="nonbinary" value="nonbinary"> Gender Non-Binary
-					</label></div><p>
-				</div>
+					</label>
+				</div><p>
 				<div id="add-container" class="form-elem">
 					<label for="address">Address</label>
-					<input type="text" name="address" id="address" placeholder="5858 Lucas Valley Road">
+					<input type="text" name="address" id="address" placeholder="5858 Lucas Valley Road" required>
 				</div>
 				<div id="city-container" class="form-elem">
 					<label for="city">City</label>
-					<input type="text" name="city" id="city" placeholder="Mos Eisley">
+					<input type="text" name="city" id="city" placeholder="Mos Eisley" required>
 				</div>
 				<div id="province-drop-container" class="form-elem">
-					<label for="province">Province of Residence</label>
+					<label for="home-prov">Province of Residence</label>
 					<select name="home-prov" id="home-prov">
 						<option value="tatooine">Tatooine</option>
 						<option value="coruscant">Coruscant</option>
@@ -79,7 +78,7 @@
 					</select>
 				</div>
 				<div id="country-drop-container" class="form-elem">
-					<label for="country">Country of Residence</label>
+					<label for="home-cntry">Country of Residence</label>
 					<select name="home-cntry" id="home-cntry">
 						<option value="galactic_republic">The Galactic Republic</option>
 						<option value="galactic_empire">The Galactic Empire</option>
@@ -88,7 +87,7 @@
 				</div>
 				<div id="postal-code-container" class="form-elem">
 					<label for="postal-code">Postal Code</label>
-					<input type="text" name="postal-code" id="postal-code" placeholder="R2D 2R4">
+					<input type="text" name="postal-code" id="postal-code" placeholder="R2D 2R4" required>
 				</div>
 				<div id="hobbies-container" class="form-elem">
 					<h3>Hobbies and Interests</h3>
@@ -111,9 +110,15 @@
 					<input type="checkbox" name="hobbies" id="brooding" checked><br>
 					<label for="protecting-younglings">Protecting Jedi Younglings</label>
 					<input type="checkbox" name="hobbies" id="protecting-younglings">
-				</div>
+				</div><br>
+				<div id="url-spec-container" class="form-elem">
+					<label for="ur">Enter a URL</label>
+					<input type="url" name="ur" id="ur" placeholder="https://www.jediorder.com/recruitment">
+				</div><br>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
 			</form>
-		</section> 
+		</section>
 	</div>
 </body>
 </html>
