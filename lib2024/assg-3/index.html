@@ -34,12 +34,35 @@
 				</div>
 				<div id="spec-container" class="form-elem">
 					<label for="dte">Date of Birth</label>
-					<input type="date" name="dte" id="dte">
+					<input type="date" name="dte" id="dte"><br>
 					<label for="num">Mobile Number</label>
 					<input type="number" name="num" id="num" min="0000000000" max="9999999999" required>
 				</div>
-				<div >
-					<label></label>
+				<div id="radio-container" class="form-elem">
+					<p>Please select your gender.</p>
+					<label for="female">
+						<input type="radio" name="gender-form" id="female"
+						value="female" checked> Female
+					</label>
+					<label for="male">
+						<input type="radio" name="gender-form" id="male" value="male"> Male
+					</label>
+					<label for="nb">
+						<input type="radio" name="gender-form" id="nb" value="nb"> Gender Non-Binary
+					</label>
+				</div>
+				<div id="add-container" class="form-elem">
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address" placeholder="5858 Lucas Valley Road">
+				</div>
+				<div id="city-container" class="form-elem">
+					<label for="city">City</label>
+					<input type="text" name="city" id="city" placeholder="Mos Eisley">
+				</div>
+				<div id="province-drop-container">
+					<label for="province">
+						
+					</label>
 				</div>
 			</form>
 		</section> 
