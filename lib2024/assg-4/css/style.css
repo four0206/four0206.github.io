@@ -1,4 +1,8 @@
 @charset "utf-8";
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,6 +48,10 @@ table {
 	border-spacing: 0;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
 
 .clearfix:after {
 	content: "";
@@ -51,23 +59,136 @@ table {
 	clear: both;
 }
 
-body { 
+/*
 
-	background-image: url("../img/??????");
- }
+	Color Palette for Reference:
 
-/*Colour Palette 
+	BlacK : #000000;
+	Green : #7cc576;
+	Blue : #6dcff6;
+	White : #ffffff;
 
-green: #7dc576 rgb -> 125, 197, 118;
-blue: #6DCFF6 rgb -> 109, 207, 246;
 */
 
- header nav {
+.main-article, .footer {
+	width:100%;
+}
 
- 	color: rgb(125, 197, 118);
- }
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
 
- a {
+/*Header formatting starts here*/
 
- 	color: rgb(109, 207, 246);
- }
+header {
+	background: #7cc576
+}
+
+
+.logo {
+	float: left;
+	width: 120px;
+	padding: 60px;
+	box-sizing: border-box;
+}
+
+.head-title {
+	float: left;
+	width: calc(100% - 120px);
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+
+.desktop-nav ul{
+	width: 100%;
+}
+
+.main-nav-container {
+	padding-top:170px ;
+	text-align: center;
+
+}
+
+#home-li {
+	box-sizing: border-box;
+	width: 140px;
+	margin: 25px;
+	padding: 15px;
+	float: left;
+	background:#6dcff6;
+}
+
+#about-li {
+	box-sizing: border-box;
+	width: 140px;
+	margin: 25px;
+	padding: 15px;
+	float: left;
+	background:#6dcff6;
+}
+
+#contact-li {
+	box-sizing: border-box;
+	width: 140px;
+	margin: 25px;
+	padding: 15px;
+	float: left;
+	background:#6dcff6;
+
+}
+
+#work-li {
+	box-sizing: border-box;
+	width: 140px;
+	margin: 25px;
+	padding: 15px;
+	float: left;
+	background:#6dcff6;
+}
+
+li a {
+	display: block;
+}
+
+@media only screen and (min-width: 768px) {
+	
+	
+	header, main, footer {
+
+		max-width: 1280px;
+		margin: 0 auto;
+
+	}
+
+/*Body formatting starts here*/
+body {
+	background-image: url(../img/subtle-lilypads.png);
+}
+
+#sec-writ {
+	float: left;
+	width: 65%;
+	padding: 25px;
+	box-sizing: border-box;
+}
+
+#main-aside {
+	float: right;
+	width: 35%;
+	padding: 25px;
+	box-sizing: border-box;
+}
+
+#sec-pic .pic-slide {
+	width: 33%;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left;
+}
+
+/*Footer formatting starts here*/
+footer {
+	background: #7cc576
+} 
