@@ -53,6 +53,7 @@ table {
 	padding: 0;
 }
 
+/*CSS Clearfix*/
 .clearfix:after {
 	content: "";
 	display: table;
@@ -70,86 +71,13 @@ table {
 
 */
 
-.main-article, .footer {
-	width:100%;
-}
+/*Screen formatting here*/
+
+
 
 .container {
 	max-width: 960px;
 	margin: 0 auto;
-}
-
-/*Header formatting starts here*/
-
-header {
-	background: #7cc576
-}
-
-
-.logo {
-	float: left;
-	width: 120px;
-	padding: 60px;
-	box-sizing: border-box;
-}
-
-.head-title {
-	float: left;
-	width: calc(100% - 120px);
-	box-sizing: border-box;
-	padding: 20px;
-}
-
-
-.desktop-nav ul{
-	width: 100%;
-}
-
-.main-nav-container {
-	padding-top:170px ;
-	text-align: center;
-
-}
-
-#home-li {
-	box-sizing: border-box;
-	width: 140px;
-	margin: 25px;
-	padding: 15px;
-	float: left;
-	background:#6dcff6;
-}
-
-#about-li {
-	box-sizing: border-box;
-	width: 140px;
-	margin: 25px;
-	padding: 15px;
-	float: left;
-	background:#6dcff6;
-}
-
-#contact-li {
-	box-sizing: border-box;
-	width: 140px;
-	margin: 25px;
-	padding: 15px;
-	float: left;
-	background:#6dcff6;
-
-}
-
-#work-li {
-	box-sizing: border-box;
-	width: 140px;
-	margin: 25px;
-	padding: 15px;
-	float: left;
-	background:#6dcff6;
-}
-
-li a {
-	display: block;
 }
 
 @media only screen and (min-width: 768px) {
@@ -162,33 +90,147 @@ li a {
 
 	}
 
+/*Header formatting starts here*/
+
+header {
+	background: #7cc576
+}
+
+
+.logo {
+	float: left;
+	width: 120px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.head {
+
+	font-family: sans-serif;
+}
+
+.head-title {
+	float: left;
+	width: calc(100% - 120px);
+	box-sizing: border-box;
+	padding: 20px;
+	padding-top: 50px; 
+	padding-left: 70px;
+	font-size: 200%;
+}
+
+a {
+	display: block;
+	padding:5px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.desktop-nav ul{
+	width: 100%;
+}
+
+.desktop-nav li {
+	box-sizing: border-box;
+	width:17%;
+	margin: 20px;
+	float: left;
+}
+
+
+.main-nav-container {
+	padding-top: 100px;
+	text-align: center;
+	font-family: sans-serif;
+
+}
+
+#home-li {
+	box-sizing: border-box;
+	width: 120px;
+	padding: 12px;
+	float: left;
+	background:#6dcff6;
+}
+
+#about-li {
+	box-sizing: border-box;
+	width: 120px;
+	padding: 12px;
+	float: left;
+	background:#6dcff6;
+}
+
+#contact-li {
+	box-sizing: border-box;
+	width: 120px;
+	padding: 12px;
+	float: left;
+	background:#6dcff6;
+
+}
+
+#work-li {
+	box-sizing: border-box;
+	width: 120px;
+	padding: 12px;
+	float: left;
+	background:#6dcff6;
+}
+
+
 /*Body formatting starts here*/
 body {
 	background-image: url(../img/subtle-lilypads.png);
 }
 
-#sec-writ {
-	float: left;
+h2 {
+	font-size: 150%;
+	padding: 10px;
+	margin-left: -10px;
+	
+}
+
+h3 {
+	font-size: 125%;
+	padding: 10px;
+	margin-left: -10px;
+}
+
+.para {
+	font-family: sans-serif;
+	}
+
+.main-sec {
+	float:left;
 	width: 65%;
 	padding: 25px;
 	box-sizing: border-box;
 }
 
-#main-aside {
-	float: right;
+.main-aside-con {
+	float:left;
 	width: 35%;
 	padding: 25px;
 	box-sizing: border-box;
 }
 
-#sec-pic .pic-slide {
+.pic-slide {
 	width: 33%;
-	padding: 10px;
+	padding: 5px;
 	box-sizing: border-box;
 	float: left;
 }
+
+.figcap {
+	font-family: sans-serif;
+	text-align: center;
+}
+
 
 /*Footer formatting starts here*/
 footer {
 	background: #7cc576
 } 
+
+
