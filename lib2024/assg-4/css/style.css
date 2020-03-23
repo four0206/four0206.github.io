@@ -5,7 +5,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -96,27 +96,26 @@ header {
 	background: #7cc576
 }
 
+.text {
+	font-family: sans-serif;
+}
 
 .logo {
 	float: left;
 	width: 120px;
-	padding: 30px;
+	padding: 15px;
+	padding-left: 100px;
 	box-sizing: border-box;
 }
 
-.head {
-
-	font-family: sans-serif;
-}
 
 .head-title {
 	float: left;
 	width: calc(100% - 120px);
 	box-sizing: border-box;
 	padding: 20px;
-	padding-top: 50px; 
-	padding-left: 70px;
-	font-size: 200%;
+	padding-top: 30px; 
+	padding-left: 200px;
 }
 
 a {
@@ -133,49 +132,27 @@ a {
 .desktop-nav li {
 	box-sizing: border-box;
 	width:17%;
-	margin: 20px;
+	padding: 20px;
+	margin-right: 35px;
 	float: left;
 }
 
 
 .main-nav-container {
-	padding-top: 100px;
+	padding-top: 120px;
+	margin-right: 60px;
 	text-align: center;
-	font-family: sans-serif;
-
 }
 
-#home-li {
+#home-li, #about-li, #contact-li, #work-li {
 	box-sizing: border-box;
-	width: 120px;
-	padding: 12px;
+	width: 140px;
+	padding: 10px;
+	margin-right: 30px;
+	margin-left: -15px;
 	float: left;
 	background:#6dcff6;
-}
-
-#about-li {
-	box-sizing: border-box;
-	width: 120px;
-	padding: 12px;
-	float: left;
-	background:#6dcff6;
-}
-
-#contact-li {
-	box-sizing: border-box;
-	width: 120px;
-	padding: 12px;
-	float: left;
-	background:#6dcff6;
-
-}
-
-#work-li {
-	box-sizing: border-box;
-	width: 120px;
-	padding: 12px;
-	float: left;
-	background:#6dcff6;
+	font-size: 115%;
 }
 
 
@@ -184,47 +161,44 @@ body {
 	background-image: url(../img/subtle-lilypads.png);
 }
 
-h2 {
-	font-size: 150%;
+#main-head {
 	padding: 10px;
 	margin-left: -10px;
+	text-align: left;
 	
 }
 
-h3 {
-	font-size: 125%;
+#head-3 {
 	padding: 10px;
-	margin-left: -10px;
+	text-align: left;
 }
-
-.para {
-	font-family: sans-serif;
-	}
 
 .main-sec {
 	float:left;
 	width: 65%;
-	padding: 25px;
+	padding: 15px;
 	box-sizing: border-box;
 }
 
 .main-aside-con {
 	float:left;
 	width: 35%;
-	padding: 25px;
+	padding: 15px;
 	box-sizing: border-box;
+}
+
+.aside-head {
+	pading: 10px;
+	margin-left: -10px;
+	text-align: left;
 }
 
 .pic-slide {
 	width: 33%;
 	padding: 5px;
+	padding-left: 85px;
 	box-sizing: border-box;
 	float: left;
-}
-
-.figcap {
-	font-family: sans-serif;
-	text-align: center;
 }
 
 
@@ -233,4 +207,18 @@ footer {
 	background: #7cc576
 } 
 
+.cr-sec {
+	width: 31%;
+	box-sizing: border-box;
+	margin: 0 1%;
+	padding: 10px;
+	float: left;
+}
+
+.socials-sec {
+	width: 20%;
+	box-sizing: border-box;
+	margin: 0 10%;
+	padding: 10px;
+}
 
