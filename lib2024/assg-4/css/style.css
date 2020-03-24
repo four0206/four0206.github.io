@@ -89,11 +89,12 @@ table {
 		margin: 0 auto;
 
 	}
+}
 
 /*Header formatting starts here*/
 
 header {
-	background: #7cc576
+	background: #7cc576;
 }
 
 .text {
@@ -104,7 +105,7 @@ header {
 	float: left;
 	width: 120px;
 	padding: 15px;
-	padding-left: 100px;
+	padding-left: 45px;
 	box-sizing: border-box;
 }
 
@@ -114,33 +115,32 @@ header {
 	width: calc(100% - 120px);
 	box-sizing: border-box;
 	padding: 20px;
-	padding-top: 30px; 
-	padding-left: 200px;
+	padding-top: 40px; 
+	padding-left: 120px;
 }
 
 a {
-	display: block;
+	display: inline-block;
 	padding:5px;
 	text-decoration: none;
 	color: #000000;
 }
 
-.desktop-nav ul{
-	width: 100%;
+.desktop-nav {
+	display: block;
 }
 
 .desktop-nav li {
 	box-sizing: border-box;
-	width:17%;
+	width:25%;
+	margin-left: -30px;
 	padding: 20px;
-	margin-right: 35px;
 	float: left;
 }
 
 
 .main-nav-container {
 	padding-top: 120px;
-	margin-right: 60px;
 	text-align: center;
 }
 
@@ -148,8 +148,8 @@ a {
 	box-sizing: border-box;
 	width: 140px;
 	padding: 10px;
-	margin-right: 30px;
-	margin-left: -15px;
+	margin-right: -85px;
+	margin-left: -45px;
 	float: left;
 	background:#6dcff6;
 	font-size: 115%;
@@ -168,11 +168,6 @@ body {
 	
 }
 
-#head-3 {
-	padding: 10px;
-	text-align: left;
-}
-
 .main-sec {
 	float:left;
 	width: 65%;
@@ -183,42 +178,53 @@ body {
 .main-aside-con {
 	float:left;
 	width: 35%;
-	padding: 15px;
+	padding: 25px;
+	padding-top: 60px;
 	box-sizing: border-box;
 }
 
 .aside-head {
-	pading: 10px;
+	padding: 10px;
 	margin-left: -10px;
 	text-align: left;
+}
+
+#aside-head {
+	padding: 10px;
+	text-align: left;
+}
+
+#pic-head {
+	padding-left: 10px;
 }
 
 .pic-slide {
 	width: 33%;
 	padding: 5px;
-	padding-left: 85px;
+	padding-left: 25px;
 	box-sizing: border-box;
 	float: left;
 }
-
 
 /*Footer formatting starts here*/
 footer {
 	background: #7cc576
 } 
 
+
 .cr-sec {
-	width: 31%;
+	width: 40%;
 	box-sizing: border-box;
-	margin: 0 1%;
-	padding: 10px;
+	margin: 0 5%;
+	padding: 50px;
 	float: left;
 }
 
-.socials-sec {
+.footer-li {
 	width: 20%;
 	box-sizing: border-box;
-	margin: 0 10%;
-	padding: 10px;
+	margin: 0 5%;
+	padding: 5px;
+	padding-top: 10px;
+	float: right;
 }
-
