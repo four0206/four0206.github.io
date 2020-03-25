@@ -105,7 +105,7 @@ header {
 	float: left;
 	width: 120px;
 	padding: 15px;
-	padding-left: 45px;
+	padding-left: 20px;
 	box-sizing: border-box;
 }
 
@@ -115,7 +115,7 @@ header {
 	width: calc(100% - 120px);
 	box-sizing: border-box;
 	padding: 20px;
-	padding-top: 40px; 
+	padding-top: 60px; 
 	padding-left: 120px;
 }
 
@@ -130,26 +130,23 @@ a {
 	display: block;
 }
 
-.desktop-nav li {
-	box-sizing: border-box;
-	width:25%;
-	margin-left: -30px;
-	padding: 20px;
-	float: left;
-}
-
-
 .main-nav-container {
-	padding-top: 120px;
-	text-align: center;
+	max-width: 960px;
+	width: 100%;
+	padding-top: 180px;
 }
 
 #home-li, #about-li, #contact-li, #work-li {
+	width:165px;
+	text-align: center;
 	box-sizing: border-box;
-	width: 140px;
-	padding: 10px;
-	margin-right: -85px;
-	margin-left: -45px;
+	padding: 15px; 
+	padding-right: 35px;
+	padding-left: 35px;
+	margin: 30px;
+	margin-top: -35px;
+	margin-bottom: 20px;
+	border-radius: 5px;
 	float: left;
 	background:#6dcff6;
 	font-size: 115%;
@@ -171,17 +168,23 @@ body {
 .main-sec {
 	float:left;
 	width: 65%;
-	padding: 15px;
+	padding: 25px;
+	margin-top:-15px;
 	box-sizing: border-box;
 }
 
-.main-aside-con {
+#main-aside {
+	margin-top: 50px;
+}
+
+.main-aside-container {
 	float:left;
 	width: 35%;
-	padding: 25px;
-	padding-top: 60px;
+	padding: 20px;
+	padding-top: 3px;
 	box-sizing: border-box;
 }
+
 
 .aside-head {
 	padding: 10px;
@@ -195,15 +198,16 @@ body {
 }
 
 #pic-head {
-	padding-left: 10px;
+	padding-left: 25px;
 }
 
-.pic-slide {
-	width: 33%;
-	padding: 5px;
-	padding-left: 25px;
+.pic-slide-container, .pic-slide {
+	max-width: 960px;
+	width: 33%; 
+	padding: 15px;
 	box-sizing: border-box;
 	float: left;
+	text-align: center;
 }
 
 /*Footer formatting starts here*/
