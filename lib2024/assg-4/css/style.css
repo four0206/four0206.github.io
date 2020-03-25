@@ -134,10 +134,11 @@ a {
 	max-width: 960px;
 	width: 100%;
 	padding-top: 180px;
+	padding-left: 25px;
 }
 
 #home-li, #about-li, #contact-li, #work-li {
-	width:165px;
+	width:17%;
 	text-align: center;
 	box-sizing: border-box;
 	padding: 15px; 
