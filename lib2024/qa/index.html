@@ -6,9 +6,9 @@
 </head>
 <body>
 	<h1>LIB2024- QA</h1>
-	<!-- Qus/Ans list begins -->
+	<!-- Ques/Ans list begins -->
 	<ol>
-		<!-- Qus 1 -->
+		<!-- Ques 1 -->
 		<li>
 			<p>
 				<strong>Ques: </strong>
@@ -17,8 +17,9 @@
 			<p>
 				<strong>Ans: </strong>
 				HTML, CSS, and JavaScript
-		</p></li>
-		<!-- Qus 2 -->
+			</p>
+		</li>
+		<!-- Ques 2 -->
 		<li>
 			<p>
 				<strong>Ques:</strong>
@@ -29,6 +30,17 @@
 				Version control is a system that records changes to a file or a set of files over time so that it is possible to easily recall specific versions later. One example of a version control is GitHub.
 			</p>
 		</li>
+		<!--Ques 3>-->
+		<li>
+			<p>
+				<strong>Ques:</strong>
+				What tag is used to create the title of a web page? Give an example.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+					The &#60;title&#62; tag is used to create the title of a web page. For example: <br>&#60;title&#62;LIB2024 QA&#60;title&#62;.
+		</li>
+		<!--Ques 4-->
 		<li>
 			<p>
 				<strong>Ques:</strong>
@@ -39,16 +51,18 @@
 					&#60;p&#62; is used to create paragraphs. For example:</p>
 						<p>This is a paragraph</p>
 		</li>
+		<!--Ques 5-->
 		<li>
 			<p>
 				<strong>Ques:</strong>
-				Identify the odd one out from: &#60;span&#62;, &#60;p&#62;, &#60;a&#62;, and &#60;i&#62; and state why.
+				Identify the odd one out from: &#60;span&#62;, &#60;p&#62;, &#60;a&#62;, and &#60;i&#62; and state <br> why.
 			</p>
 			<p>
 				<strong>Ans:</strong>
 				&#60;p&#62; is the odd one out because the rest are all inline elements while &#60;p&#62; is a block level element.
 			</p>
 		</li>
+		<!--Ques 6-->
 		<li>
 			<p>
 				<strong>Ques:</strong>
@@ -59,6 +73,7 @@
 				&#60;nav&#62; then &#60;ol&#62; OR &#60;ul&#62; then &#60;li&#62;
 			</p>
 		</li>
+		<!--Ques 7-->
 		<li>
 			<p>
 				<strong>Ques:</strong>
@@ -69,6 +84,7 @@
 				&#60;img&#62;, its attributes are: src= (for the image source), alt= (for the alternate text), width= and height= (for rendering width and height without CSS)
 			</p>
 		</li>
+		<!--Ques 8-->
 		<li>
 			<p>
 				<strong>Ques:</strong>
@@ -77,6 +93,143 @@
 			<p>
 				<strong>Ans:</strong>
 				The odd one out is &#60;b&#62;, because the others are all elements used for creating tables, while &#60;b&#62; simply bolds your text. 
+			</p>
+		</li>
+		<!--Ques 9-->
+		<li>
+			<p>
+				<strong>Ques:</strong>
+				Give an example of a color picker input. 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				Pick a colour: <input type="color" name="color" id="color" value="#FFC0CB">
+			</p>
+		</li>
+		<!--Ques 10-->
+		<li>
+			<p>
+				<strong>Ques:</strong>
+				What is the use of name and value attributes? Give two examples. 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+			</p>
+		</li>
+		<!--Ques 11-->
+		<li>
+			<p>
+				<strong>Ques:</strong>
+				Give an example of inline style.
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				<span style="color: pink">I am now pink thanks to inline CSS. </span> The coding is as follows: &#60;style="color: pink"&#62;
+			</p>
+		</li>
+		<!--Ques 12-->
+		<li>
+			<p>
+				<strong>Ques:</strong>
+				How would you link an external style sheet? Give an example. 
+			</p>
+			<p>
+				<strong>Ans:</strong>
+				&#60;link rel="stylesheet" type="text/css" href="css/style.css"&#62;
+			</p>
+		</li>
+		<!--Ques 13-->
+		<li>
+			<p>
+				<strong>Ques:</strong>
+				Create a CSS block to center an element both horizontally and vertically that has position: absolute and has width: 200px and height: 200px.  
+			</p>
+			<p class="para-13-ans">
+				<style type="text/css">
+					.para-13-ans {
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						width: 200px;
+						height: 200px;
+						margin:-100px 0 0 -100px;
+						background-color: pink; 
+					}
+				</style>
+				<strong>Ans:</strong>
+				<font color="white">I am now centred.</font>
+			</p>
+		</li>
+		<!--Ques 14-->
+		<li>
+			<p>
+				<strong>Ques:</strong>
+				Create a CSS keyframes block called "spin" that rotates an element. 
+			</p>
+			<p class="para-14-ans">
+				<style type="text/css">
+					.para-14-ans {
+						animation: 
+							spin 8s linear infinite
+					}
+					@keyframes spin {
+						from {
+							transform: rotate(0deg);
+						}
+						to {
+							transform: rotate(360deg);
+						}
+					}
+				</style>
+				<strong>Ans:</strong>
+				I spin now. 
+			</p>
+		</li>
+		<!--Ques 15-->
+		<li>
+			<p>
+				<strong>Ques:</strong>
+				Create a CSS animation block to rotate an element that has the following properties: 
+					<ul>
+						<li>class: "rotate-me"</li>
+						<li>It rotates 5 times at intervals of 0.5s with a "linear" transition using the animation keyframes "spin"</li>
+					</ul>
+			</p>
+			<p class="rotate-me">
+				<style type="text/css">
+					.rotate-me {
+							    animation:
+							    	spin 0.5s linear 5;
+							}
+							@keyframes spin {
+								from {
+									transform: rotate(0deg);
+								}
+								to {
+									transform: rotate(360deg);
+								}
+							}
+						</style>
+				<strong>Ans:</strong>
+				I also rotate, but only a bit.
+			</p>
+		</li>
+		<!--Ques 16-->
+		<li>
+			<p>
+				<strong>Ques:</strong>
+				How would you include/create an alert with string "I love JavaScript" using Javascript? 
+			</p>
+			<p id="alert">
+				<strong>Ans:</strong>
+				<script type="text/javascript">
+					function alert() {
+						var alert = this.alert;
+						console.log(this);
+						this.innerHTML = "I love Javascript"
+						alert(I love JavaScript)
+					}
+				</script>
 			</p>
 		</li>
   </ol>
