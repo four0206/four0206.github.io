@@ -38,7 +38,7 @@
 			</p>
 			<p>
 				<strong>Ans:</strong>
-					The &#60;title&#62; tag is used to create the title of a web page. For example: <br>&#60;title&#62;LIB2024 QA&#60;title&#62;.
+					The &#60;title&#62; tag is used to create the title of a web page. For example: &#60;title&#62;LIB2024 QA&#60;title&#62;.
 		</li>
 		<!--Ques 4-->
 		<li>
@@ -55,7 +55,7 @@
 		<li>
 			<p>
 				<strong>Ques:</strong>
-				Identify the odd one out from: &#60;span&#62;, &#60;p&#62;, &#60;a&#62;, and &#60;i&#62; and state <br> why.
+				Identify the odd one out from: &#60;span&#62;, &#60;p&#62;, &#60;a&#62;, and &#60;i&#62; and state why.
 			</p>
 			<p>
 				<strong>Ans:</strong>
@@ -103,7 +103,7 @@
 			</p>
 			<p>
 				<strong>Ans:</strong>
-				Pick a colour: <input type="color" name="color" id="color" value="#FFC0CB">
+				&#60;input type="color" name="color" id="color" value="#FFC0CB"&#62;
 			</p>
 		</li>
 		<!--Ques 10-->
@@ -114,6 +114,7 @@
 			</p>
 			<p>
 				<strong>Ans:</strong>
+
 			</p>
 		</li>
 		<!--Ques 11-->
@@ -124,7 +125,7 @@
 			</p>
 			<p>
 				<strong>Ans:</strong>
-				<span style="color: pink">I am now pink thanks to inline CSS. </span> The coding is as follows: &#60;style="color: pink"&#62;
+				&#60;style="color: pink"&#62;
 			</p>
 		</li>
 		<!--Ques 12-->
@@ -144,20 +145,16 @@
 				<strong>Ques:</strong>
 				Create a CSS block to center an element both horizontally and vertically that has position: absolute and has width: 200px and height: 200px.  
 			</p>
-			<p class="para-13-ans">
-				<style type="text/css">
-					.para-13-ans {
-						position: absolute;
-						left: 50%;
-						top: 50%;
-						width: 200px;
-						height: 200px;
-						margin:-100px 0 0 -100px;
-						background-color: pink; 
+			<p>
+				<strong>Ans:</strong><br>
+				.container { <br>
+						&emsp;<i>position</i>: absolute; <br>
+						&emsp;<i>left</i>: 50%; <br>
+						&emsp;<i>top</i>: 50%;<br>
+						&emsp;<i>width</i>: 200px; <br>
+						&emsp;<i>height</i>: 200px; <br>
+						&emsp;<i>margin</i>:-100px 0 0 -100px;<br>
 					}
-				</style>
-				<strong>Ans:</strong>
-				<font color="white">I am now centred.</font>
 			</p>
 		</li>
 		<!--Ques 14-->
@@ -166,23 +163,16 @@
 				<strong>Ques:</strong>
 				Create a CSS keyframes block called "spin" that rotates an element. 
 			</p>
-			<p class="para-14-ans">
-				<style type="text/css">
-					.para-14-ans {
-						animation: 
-							spin 8s linear infinite
-					}
-					@keyframes spin {
-						from {
-							transform: rotate(0deg);
-						}
-						to {
-							transform: rotate(360deg);
-						}
-					}
-				</style>
-				<strong>Ans:</strong>
-				I spin now. 
+			<p>
+				<strong>Ans:</strong><br>
+				@keyframes spin { <br>
+						&emsp;&emsp;<i>from</i> {<br>
+							&emsp;transform: rotate(0deg);<br>
+						&emsp;&ensp;}<br>
+						&emsp;&emsp;<i>to</i> {<br>
+							&emsp;transform: rotate(360deg);<br>
+						&emsp;&ensp;}<br>
+					} <br>
 			</p>
 		</li>
 		<!--Ques 15-->
@@ -195,23 +185,20 @@
 						<li>It rotates 5 times at intervals of 0.5s with a "linear" transition using the animation keyframes "spin"</li>
 					</ul>
 			</p>
-			<p class="rotate-me">
-				<style type="text/css">
-					.rotate-me {
-							    animation:
-							    	spin 0.5s linear 5;
-							}
-							@keyframes spin {
-								from {
-									transform: rotate(0deg);
-								}
-								to {
-									transform: rotate(360deg);
-								}
-							}
-						</style>
-				<strong>Ans:</strong>
-				I also rotate, but only a bit.
+			<p>
+				<strong>Ans:</strong><br>
+					.rotate-me {<br>
+						&emsp;<i>animation</i>:<br>
+							&emsp;&ensp;spin 0.5s linear 5;<br>
+							&emsp;}<br>
+							&emsp;@keyframes spin { <br>
+								&emsp;&emsp;&emsp;<i>from</i> {<br>
+									&emsp;&emsp;transform: rotate(0deg);<br>
+								&emsp;&emsp;&ensp;}<br>
+								&emsp;&emsp;&emsp;<i>to</i> {<br>
+									&emsp;&emsp;transform: rotate(360deg);<br>
+							&emsp;&emsp;&ensp;}<br>
+						} <br>
 			</p>
 		</li>
 		<!--Ques 16-->
@@ -222,10 +209,7 @@
 			</p>
 			<p id="alert">
 				<strong>Ans:</strong>
-					&#60;script type="text/javascript"&#62;alert("I love JavaSCript")&#60;/script&#62;
-					<script type="text/javascript">
 						alert("I love JavaScript");
-					</script>
 			</p>
 		</li>
   </ol>
