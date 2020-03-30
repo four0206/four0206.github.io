@@ -114,7 +114,7 @@
 			</p>
 			<p>
 				<strong>Ans:</strong>
-
+				The name and value attributes work together. The name attribute can be used specify a name for an element, or it can also be used as a reference when data is submitted (e.g., from a form). The value attribute specifies the initial value of the element, so that even if two elements have the same name, they might not have the same value. In forms, the value attribute is what gets sent to the server--for example, if an elements name is "FName" for first name, the value sent to the server would be the first name a user specifies. Another example, also found in forms, would be a drop-down menu, where the entire menu is under the same name attribute (e.g., "homeprov" for "home province") while each option has its own value (e.g., "on" for "Ontario").
 			</p>
 		</li>
 		<!--Ques 11-->
@@ -147,14 +147,16 @@
 			</p>
 			<p>
 				<strong>Ans:</strong><br>
-				.container { <br>
-						&emsp;<i>position</i>: absolute; <br>
-						&emsp;<i>left</i>: 50%; <br>
-						&emsp;<i>top</i>: 50%;<br>
-						&emsp;<i>width</i>: 200px; <br>
-						&emsp;<i>height</i>: 200px; <br>
-						&emsp;<i>margin</i>:-100px 0 0 -100px;<br>
-					}
+				&#60;style type="text/css"&#62;<br>
+				&emsp;.container { <br>
+						&emsp;&emsp;<i>position</i>: absolute; <br>
+						&emsp;&emsp;<i>left</i>: 50%; <br>
+						&emsp;&emsp;<i>top</i>: 50%;<br>
+						&emsp;&emsp;<i>width</i>: 200px; <br>
+						&emsp;&emsp;<i>height</i>: 200px; <br>
+						&emsp;&emsp;<i>margin</i>:-100px 0 0 -100px;<br>
+					&emsp;}<br>
+				&#60;/style&#62;
 			</p>
 		</li>
 		<!--Ques 14-->
@@ -165,14 +167,16 @@
 			</p>
 			<p>
 				<strong>Ans:</strong><br>
-				@keyframes spin { <br>
-						&emsp;&emsp;<i>from</i> {<br>
-							&emsp;transform: rotate(0deg);<br>
-						&emsp;&ensp;}<br>
-						&emsp;&emsp;<i>to</i> {<br>
-							&emsp;transform: rotate(360deg);<br>
-						&emsp;&ensp;}<br>
-					} <br>
+				&#60;style type="text/css"&#62;<br>
+				&emsp;@keyframes spin { <br>
+						&emsp;&emsp;&emsp;<i>from</i> {<br>
+							&emsp;&emsp;transform: rotate(0deg);<br>
+						&emsp;&emsp;&ensp;}<br>
+						&emsp;&emsp;&emsp;<i>to</i> {<br>
+							&emsp;&emsp;transform: rotate(360deg);<br>
+						&emsp;&emsp;&ensp;}<br>
+					&emsp;} <br>
+				&#60;/style&#62;
 			</p>
 		</li>
 		<!--Ques 15-->
@@ -187,18 +191,20 @@
 			</p>
 			<p>
 				<strong>Ans:</strong><br>
-					.rotate-me {<br>
-						&emsp;<i>animation</i>:<br>
-							&emsp;&ensp;spin 0.5s linear 5;<br>
-							&emsp;}<br>
-							&emsp;@keyframes spin { <br>
-								&emsp;&emsp;&emsp;<i>from</i> {<br>
-									&emsp;&emsp;transform: rotate(0deg);<br>
-								&emsp;&emsp;&ensp;}<br>
-								&emsp;&emsp;&emsp;<i>to</i> {<br>
-									&emsp;&emsp;transform: rotate(360deg);<br>
-							&emsp;&emsp;&ensp;}<br>
-						} <br>
+					&#60;style type="text/css"&#62;<br>
+					&emsp;.rotate-me {<br>
+						&emsp;&emsp;<i>animation</i>:<br>
+							&emsp;&emsp;&ensp;spin 0.5s linear 5;<br>
+							&emsp;&emsp;}<br>
+							&emsp;&emsp;@keyframes spin { <br>
+								&emsp;&emsp;&emsp;&emsp;<i>from</i> {<br>
+									&emsp;&emsp;&emsp;transform: rotate(0deg);<br>
+								&emsp;&emsp;&emsp;&ensp;}<br>
+								&emsp;&emsp;&emsp;&emsp;<i>to</i> {<br>
+									&emsp;&emsp;&emsp;transform: rotate(360deg);<br>
+							&emsp;&emsp;&emsp;&ensp;}<br>
+						&emsp;} <br>
+						&#60;/style&#62;
 			</p>
 		</li>
 		<!--Ques 16-->
@@ -209,7 +215,7 @@
 			</p>
 			<p id="alert">
 				<strong>Ans:</strong>
-						alert("I love JavaScript");
+						&#60;script type="text/javascript"&#62; alert("I love JavaScript");&#60;/script&#62;
 			</p>
 		</li>
   </ol>
