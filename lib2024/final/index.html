@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 	<title>Final Assignment</title>
+
+	<!--External Style Sheet Link-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<meta charset="utf-8">
 	<meta name="Author" content="Sabrina Fournier">
 	<meta name="description" content="This is my Final Assignment">
 	<meta name="keywords" content="HTML, HTML5, Homework, Assignment, Final Assignment">
-	<title></title>
 </head>
 <body>
 	<div class="overlay-container loader-container">
@@ -38,7 +40,8 @@
 			</ul>	
 		</nav>
 		<!--End of Header Navigation-->
-		<div class="mobile-bars"></div>
+		
+		<div class="mobile-menu-bars"></div>
 
 		<!--Mobile Navigation Code Starts Here-->
 		<div class="mobile-nav-container clearfix">
@@ -61,10 +64,14 @@
 		</div>
 		<!--End of Mobile Navigation-->
 	</header>
-	<main class="main clearfix" id="main">
-		<article class="main-article site-content">
 
-			<!--Main Content Starts Here-->
+	<!--Main Body Code Begins Here-->
+	<main class="main clearfix" id="main">
+
+		<!--Site Content Code Begins here-->
+		<article class="col-main-article site-content">
+
+			<!--Main Content Code Begins Here-->
 			<section class="main-section">
 				<h2 class="spec-font">About Ollie</h2>
 				<p>
@@ -73,15 +80,15 @@
 			</section>
 			<!--End of Main Content-->
 
-			<!--Image Aside Here-->
+			<!--Image Aside Code Begins Here-->
 			<aside>
 				<div class="ostrich-img">
-					<img src="img/ostrich.jpg" alt="Image of Ostrich Face" width="330px" height="230">
+					<img src="img/ostrich.jpg" alt="Image of Ostrich Face" width="330px" height="230px">
 				</div>
 			</aside>
 			<!--End of Image Aside-->
 
-			<!--Schedule Section Begins Here-->
+			<!--Schedule Section Code Begins Here-->
 			<section class="schedule-section">
 				<h2 class="spec-font">Schedule</h2>
 				<table class="sched-table">
@@ -133,26 +140,35 @@
 			</section>
 			<!--End of Schedule Section-->
 
-			<!--Profile Section Begins-->
+			<!--Profile Section Code Begins Here-->
 			<section class="profile-value-transfer cleafix">
 				<h2 class="spec-font">Edit Profile</h2>
 				<form id="form" action="submit.php" method="post">
+					<!--Name Input-->
 					<p>
 						<label for="name">Name:</label>
 						<input type="text" name="name" id="name" placeholder="Ollie Ostrich" required>
 					</p>
+
+					<!--Email Input-->
 					<p>
 						<label for="email">Email:</label>
 						<input type="email" name="email" id="email" placeholder="ollieostrich@outlook.com" required>
 					</p>
+
+					<!--Address Input-->
 					<p>
 						<label for="address">Address:</label>
 						<input type="text" name="address" id="address" placeholder="6969 Avian Alley" required>
 					</p>
+
+					<!--City Input-->
 					<p>
 						<label for="city">City:</label>
 						<input type="text" name="city" id="city" placeholder="Pigeon Island" required>
 					</p>
+
+					<!--Province Input-->
 					<p>
 						<label for="province">Province</label>
 						<select name="province" id="province" required>
@@ -171,18 +187,118 @@
 							<option value="NL">Newfoundland and Labrador</option>
 						</select>
 					</p>
+
+					<!--Postal Code Input-->
+					<p>
+						<label for="postal">Postal Code</label>
+						<input type="text" name="postal" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="postal" id="postal" placeholder="Q0Q O3O" required>
+					</p>
+
+					<!--Submit Button-->
+					<button type="submit">Submit</button>
 				</form>
 
-				<!--Profile Transfer Starts Here-->
+				<!--Profile Transfer Code Begins Here-->
 				<h2 class="spec-font">Profile Info</h2>
+				<div>
+					<img src="img/orstrich2.jpg" alt="Surprised Ostrich Profile Picture" width="">
+					<!--Name Result-->
+					<p class="spec-font"><span id="name_result"></span></p>
+					<!--Email Result-->
+					<p><span id="email_result"></span></p>
 
-				<!--Profile Transfer Ends Here-->
+					<!--Address and City Result-->
+					<p><span id="addcity_result"></span></p>
+
+					<!--Province and Postal Code Result-->
+					<p><span id="provcode_result"></span></p>
+				</div>
+				<!--Profile Transfer Ends Here-->	
 			</section>
 			<!--Profile Section Ends-->
-
-			<!--Profile Info Section Begins Here-->
 		</article>
-		
+		<!--Site Content Hends Here--> 
 	</main>
+	<!--Main Body Ends Here-->
+
+	<!--Footer Code Begins Here-->
+	<footer class="footer" id="footer">
+		<div class="footer-container">
+
+			<!--Quick Links Code Begins Here-->
+			<section class="col-footer company-info">
+				<h4>Quick Links</h4>
+				<nav class="footer-nav">
+					<ul>
+						<li>
+							<a href="https://www.orbitalollie.com/schedule"></a>
+						</li>
+						<li>
+							<a href="https://www.orbitalollie.com/about"></a>
+						</li>
+						<li>
+							<a href="https://www.orbitalollie.com/portolio"></a>
+						</li>
+						<li>
+							<a href="https://www.orbitalollie.com/contact"></a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<!--Quick Links Ends Here-->
+
+			<!--Social Media Links Code Begins Here-->
+			<section class="col-footer social-media">
+				<h4>Follow Us</h4>
+				<nav>	
+					<ul>
+						<!--Facebook Link-->
+						<li>
+							<div id="facebook-li" class="col-footer">
+								<a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook Logo"></a>
+							</div>
+						</li>
+
+						<!--Youtube Link-->
+						<li>
+							<div id="youtube-li" class="col-footer">
+								<a href="https://www.youtube.com"><img src="img/youtube.png" alt="Youtube Logo"></a>
+							</div>
+						</li>
+
+						<!--Twitter link-->
+						<li>
+							<div id="twitter-li" class="col-footer">
+								<a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter Logo"></a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<!--Social Media Links End Here-->
+
+			<!--Address Information Code Begins Here-->
+			<section class="col-footer footer-address">
+				<h4>Address</h4>
+				<address>
+					<p>6969 Avian Alley</p>
+					<p>Pigeon Island, ON Q0Q O3O</p>
+				</address>
+			</section>
+			<!--Address Information Ends here-->
+		</div>
+	</footer>
+	<!--Footer Ends Here-->
+
+	<!--JavaScript Links Begin Here-->
+
+	<!--jQuery Link-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!--Exernal Script Sheet Link-->
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<!--JavaScript Links End Here-->
+
 </body>
 </html>
