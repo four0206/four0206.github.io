@@ -59,3 +59,136 @@ table {
 	display: table;
 	clear: both;
 }
+
+/*
+	Colour Palette
+
+	Black : #000000;
+	Teal : #72a9ae;
+	Grey : #454545;
+	White : #ffffff;
+
+*/
+
+/************************
+		MOBILE FIRST
+************************/
+
+/*Major containers set to 100% width to achieve Fluid Layout */
+.col-main-article, .col-footer, img {
+	width:100%;
+}
+
+.logo {
+	float: left; 
+	width: 120px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.desktop-nav {
+	float: right;
+	width: calc(100% - 100px);
+	display: none;
+	max-width: 600px;
+}
+
+.desktop-nav ul {
+	width: 100%
+}
+
+.desktop-nav li {
+	box-sizing: border-box;
+	width: 10%
+	float: left;
+	position: relative;
+}
+
+.desktop-nav li:first-child {
+	border-radius: 10px 0 0 10px;
+}
+
+.desktop-nav li:last-child {
+	border: 0 10px 10px 0;
+}
+
+.main-nav a {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	borde-left: 2px solid #444;
+}
+.desktop-nav li {
+	width: 100%;
+}
+
+.desktop-nav li a {
+	background: ##72a9ae;
+	border-left: none;
+	border-bottom: 2px solid #444;
+}
+
+.mob-bars {
+	float: right;
+}
+
+.mob-bars {
+	height: 15px;
+	margin: 15px;
+	padding-top: 5px;
+	position: relative;
+	float: right;
+	cursor: pointer;
+}
+
+	.mob-bars, .mob-bars:before, .mob-bars:after {
+		width: 30px;
+
+	}
+
+	.mob-bars:before {
+		content: "";
+		display: block;
+		position: absolute;
+		background: black;
+	}
+
+	.mob-bars:after {
+		content: "";
+		display: block;
+		background: black;
+		position: absolute;
+		display: none;
+	}
+
+.mobile-nav {
+	width: 100%;
+	clear: both;
+	position: absolute;
+	display: none;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+}
+
+.mobile-nav li {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	background: #72a9ae;
+	border-bottom: 2px solid #121212;
+}
+
+
+/*Main Content Styles Begin Here*/
+
+body {
+	background-image: url(../img/foggybirds.png);
+}
+
+.site-content {
+
+}
