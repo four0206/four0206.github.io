@@ -6,7 +6,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -241,6 +241,12 @@ font-family: 'Noto Sans', sans-serif;
 
 }
 
+a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+}
+
 h2 {
 	font-weight: bold;
 	color: #72a9ae;
@@ -252,12 +258,28 @@ thead {
 	color: #72a9ae;
 }
 
+.foot-text {
+	color: #ffffff;
+}
+
+h4 {
+	color: #ffffff;
+}
+
+
+#footer-nav a {
+	color: #ffffff;
+
+}
+
+
 /*Header Styles*/
 
 header {
 	background: #72a9ae;
 	margin-top: -50px;
 }
+
 
 
 /*Body Styles*/
@@ -321,7 +343,7 @@ table, th, td {
 	padding: 10px;
 }
 
-/*Profile Information*/
+/*Profile Information Styles*/
 
 .profile-form {
 	float: left;
@@ -340,5 +362,9 @@ table, th, td {
 
 }
 
+/*Footer Styles*/
 
+footer {
+	background: #454545;
+}
 
