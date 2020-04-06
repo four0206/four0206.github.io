@@ -62,7 +62,8 @@ table {
 
 	Black : #000000;
 	Teal : #72a9ae;
-	Grey : #454545;
+	Light Grey: #efefef;
+	Dark Grey : #454545;
 	White : #ffffff;
 
 */
@@ -288,8 +289,11 @@ body {
 	background: #ffffff;
 }
 
-.site-content {
+.main {
 	background: url(../img/foggybirds.png);
+}
+
+.site-content {
 	padding: 15px; 
 	width: 100%;
 	box-sizing: border-box;
@@ -343,6 +347,14 @@ table, th, td {
 	padding: 10px;
 }
 
+.wht-row {
+	background-color: #ffffff;
+}
+
+.lg-row {
+	background-color: #efefef;
+}
+
 /*Profile Information Styles*/
 
 .profile-form {
@@ -368,3 +380,10 @@ footer {
 	background: #454545;
 }
 
+.col-footer {
+	width: 31%; 
+	box-sizing: border-box;
+	margin: 0 1%;
+	padding: 10px;
+	float: left;
+}
