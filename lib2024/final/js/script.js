@@ -1,6 +1,9 @@
 window.onload = init;
 
+
 function init() {
+
+	document.querySelector('.mob-bars').onclick = showHideMobileMenu;
 
 	// Code for the JQuery function attached to the submit event of the form with the id "form"
 	$('#form').submit(function (e) {
@@ -19,6 +22,19 @@ function init() {
    		 })
 	});
 
+}
+
+function showHideMobileMenu() {
+
+	var mobileNav = document.querySelector('.mobile-nav');
+
+	// in a if statement == is used to compare two value, if the values matches then the condition is true
+	// an if statement is followed by an else statement which runs when the given condition is not met
+	if(mobileNav.style.display=="block") {
+		mobileNav.style.display="none";
+	} else {
+		mobileNav.style.display="block";
+	}
 }
 
 // This code is to show the form values in the fresults div with the argument "form"

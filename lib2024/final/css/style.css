@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url('fonts.css');
+
 
  /*http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -70,45 +72,6 @@ table {
 
 /*Screen Formatting Here*/
 
-/*==================================================
-=           Standard Media Queries             =
-==================================================*/
-
-
-
-
-    /*==========  Mobile First Method  ==========*/
-
-    /* Custom, iPhone Retina */ 
-    @media only screen and (min-width : 320px) {
-
-    }
-
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
-
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-
-    	header, main, footer {
-
-    		max-width: 1280px;
-    		margin: 0 auto;
-    	}
-
-    }
-
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-
-    }
 
 .container {
 	max-width: 1024px;
@@ -116,123 +79,6 @@ table {
 }
 
 
-/************************
-		MOBILE FIRST
-************************/
-
-/*Major containers set to 100% width to achieve Fluid Layout */
-.col-main-article, .col-footer, .mobile-img{
-	width:100%;
-}
-
-.logo {
-	float: left; 
-	width: 120px;
-	padding: 15px;
-	box-sizing: border-box;
-	font-family: 'peacesans_regular_macroman';
-	color: #72a9ae;
-	font-size: 225%
-}
-
-.desktop-nav {
-	float: right;
-	width: calc(100% - 100px);
-	display: none;
-	max-width: 600px;
-}
-
-.desktop-nav ul {
-	width: 100%
-}
-
-.desktop-nav li {
-	box-sizing: border-box;
-	width: 10%
-	float: left;
-	position: relative;
-}
-
-.desktop-nav li:first-child {
-	border-radius: 10px 0 0 10px;
-}
-
-.desktop-nav li:last-child {
-	border: 0 10px 10px 0;
-}
-
-.main-nav a {
-	display: block;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 10px;
-	border-left: 2px solid #444;
-}
-.desktop-nav li {
-	width: 100%;
-}
-
-.desktop-nav li a {
-	background: ##72a9ae;
-	border-left: none;
-	border-bottom: 2px solid #444;
-}
-
-.mob-bars {
-	float: right;
-}
-
-.mob-bars {
-	height: 15px;
-	margin: 15px;
-	padding-top: 5px;
-	position: relative;
-	float: right;
-	cursor: pointer;
-}
-
-	.mob-bars, .mob-bars:before, .mob-bars:after {
-		width: 30px;
-
-	}
-
-	.mob-bars:before {
-		content: "";
-		display: block;
-		position: absolute;
-		background: black;
-	}
-
-	.mob-bars:after {
-		content: "";
-		display: block;
-		background: black;
-		position: absolute;
-		display: none;
-	}
-
-.mobile-nav {
-	width: 100%;
-	clear: both;
-	position: absolute;
-	display: none;
-}
-
-.mobile-nav-container {
-	position: relative;
-	clear: both;
-}
-
-.mobile-nav li {
-	box-sizing: border-box;
-	width: 100%;
-	padding: 10px;
-	background: #72a9ae;
-	border-bottom: 2px solid #121212;
-}
-
-
-/*Main Content Styles Begin Here*/
 
 /*Font Styling*/
 
@@ -274,19 +120,148 @@ h4 {
 }
 
 
-/*Header Styles*/
+/************************
+		MOBILE FIRST
+************************/
 
-header {
+/*Major containers set to 100% width to achieve Fluid Layout*/
+.col-main-article, .col-footer, .mobile-img {
+	width:100%;
+}
+
+.logo {
+	float: left; 
+	width: 300px;
+	padding: 25px;
+	box-sizing: border-box;
+	font-family: 'peacesans_regular';
+	color: #72a9ae;
+	font-size: 225%
+}
+
+.desktop-nav {
+	float: left;
+	width: 100%;
+	display: none;
+
+}
+
+.desktop-nav ul {
+	width: 100%
+}
+
+.desktop-nav li {
+	max-width: 20%
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.desktop-nav li:first-child a {
+	border-left: 0;
+}
+
+.desktop-nav li:last-child {
+	border: 0;
+}
+
+.main-nav-container {
 	background: #72a9ae;
-	margin-top: -50px;
+
+}
+
+.main-nav-container a {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	border-left: 2px solid #444;
+}
+
+
+.desktop-nav li {
+	width: 100%;
+}
+
+.desktop-nav li a {
+	background: #72a9ae;
+	border-left: none;
 }
 
 
 
+/*Mobile Menu Bar Icon*/
+.mob-bars {
+	float: right;
+
+}
+
+.mob-bars {
+	display: block;
+	height: 15px;
+	margin: 15px;
+	padding-top: 5px;
+	position: relative;
+	float: right;
+	cursor: pointer;
+}
+
+	.mob-bars, .mob-bars:before, .mob-bars:after {
+		width: 30px;
+		border-top: 5px solid teal;
+
+	}
+
+	.mob-bars:before {
+		content: "";
+		display: block;
+		position: absolute;
+		background: teal;
+	}
+
+	.mob-bars:after {
+		content: "";
+		display: block;
+		background: #72a9ae;
+		position: absolute;
+		bottom: 0;
+	}
+
+.mobile-nav {
+	width: 100%;
+	clear: both;
+	position: absolute;
+	display: none;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+}
+
+.mobile-nav li a{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	background: #72a9ae;
+	border-bottom: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	color: #000000;
+}
+
+
+/************************
+	MAIN CONTENT STYLES
+************************/
+
+
 /*Body Styles*/
+
 
 body {
 	background: #ffffff;
+	font-family: Noto Sans, sans-serif;
 }
 
 .main {
@@ -299,6 +274,7 @@ body {
 	box-sizing: border-box;
 
 }
+
 
 
 /*About and Image Aside*/
@@ -324,6 +300,7 @@ body {
 .sched-table {
 	float: center;
 }
+
 
 
 /*Schedule Table*/
@@ -355,6 +332,8 @@ table, th, td {
 	background-color: #efefef;
 }
 
+
+
 /*Profile Information Styles*/
 
 .profile-form {
@@ -365,6 +344,15 @@ table, th, td {
 
 }
 
+.form-info {
+	max-width: 500px;
+	clear: both;
+}
+
+.form-info input {
+	width: 100%;
+	clear: both;
+}
 
 .profile-transf {
 	float: left;
@@ -374,16 +362,70 @@ table, th, td {
 
 }
 
+
+
+
 /*Footer Styles*/
 
 footer {
 	background: #454545;
+	width: 100%;
 }
 
 .col-footer {
-	width: 31%; 
+	width: 31%;
 	box-sizing: border-box;
 	margin: 0 1%;
 	padding: 10px;
 	float: left;
 }
+
+/*Loader animation*/
+.overlay-container {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,1);
+	z-index: 2;
+}
+
+.loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid; #
+}
+
+/*==================================================
+=           Standard Media Queries             =
+==================================================*/
+
+
+
+
+    /*==========  Mobile First Method  ==========*/
+
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    	header, main, footer {
+
+    		max-width: 1280px;
+    		margin: 0 auto;
+    	}
+
+    	.mob-bars {
+    		display:none;
+    	}
+
+    	.desktop-nav {
+    		display: block;
+    	}
+
+    }
+
