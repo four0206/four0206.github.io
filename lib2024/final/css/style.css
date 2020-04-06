@@ -134,7 +134,7 @@ h4 {
 	width: 300px;
 	padding: 25px;
 	box-sizing: border-box;
-	font-family: 'peacesans_regular';
+	font-family: 'peacesans_regular', sans-serif;
 	color: #72a9ae;
 	font-size: 225%
 }
@@ -261,7 +261,7 @@ h4 {
 
 body {
 	background: #ffffff;
-	font-family: Noto Sans, sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 .main {
