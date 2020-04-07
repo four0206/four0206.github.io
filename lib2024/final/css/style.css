@@ -131,10 +131,10 @@ h4 {
 
 .logo {
 	float: left; 
-	width: 300px;
+	width: 500px;
 	padding: 25px;
 	box-sizing: border-box;
-	font-family: 'peacesans_regular', sans-serif;
+	font-family: 'peace_sansregular', sans-serif;
 	color: #72a9ae;
 	font-size: 225%
 }
@@ -168,27 +168,15 @@ h4 {
 
 .main-nav-container {
 	background: #72a9ae;
-
 }
 
 .main-nav-container a {
 	display: block;
 	box-sizing: border-box;
-	width: 100%;
+	width: 20%;
 	padding: 10px;
-	border-left: 2px solid #444;
+	color: #000000;
 }
-
-
-.desktop-nav li {
-	width: 100%;
-}
-
-.desktop-nav li a {
-	background: #72a9ae;
-	border-left: none;
-}
-
 
 
 /*Mobile Menu Bar Icon*/
@@ -378,7 +366,10 @@ footer {
 	margin: 0 1%;
 	padding: 10px;
 	float: left;
+	position: relative;
 }
+
+
 
 /*Loader animation*/
 .overlay-container {

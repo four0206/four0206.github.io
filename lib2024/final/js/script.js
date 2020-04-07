@@ -3,6 +3,8 @@ window.onload = init;
 
 function init() {
 
+	
+	//Code to hide or show the Mobile Menu Bars 'on click//
 	document.querySelector('.mob-bars').onclick = showHideMobileMenu;
 
 	// Code for the JQuery function attached to the submit event of the form with the id "form"
@@ -24,6 +26,9 @@ function init() {
 
 }
 
+
+
+//Code to show or hide the Mobile Navigation Menu 'on click' of the Mobile Menu Bars//
 function showHideMobileMenu() {
 
 	var mobileNav = document.querySelector('.mobile-nav');
