@@ -67,7 +67,7 @@ table {
 	Light Grey: #efefef;
 	Dark Grey : #454545;
 	White : #ffffff;
-	Purple: #728bae;
+	Purple: #9572ae;
 
 */
 
@@ -382,14 +382,14 @@ footer {
 	z-index: 2;
 }
 
-.loader {
+.loader-graph {
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	width: 150px;
 	height: 150px;
 	margin: -75px 0 0 -75px;
-	border: 16px solid #3498db;
+	border: 16px solid #72a9ae;
 
 	animation:
 		spin 2s linear infinite,
@@ -399,12 +399,15 @@ footer {
 }
 
 @keyframes spin {
-	from{
+
+	from {
+
 		transform: rotate(0deg);
 	}
 
 	to {
-		transform: rotate(360deg)
+
+		transform: rotate(360deg);
 	}
 }
 
@@ -416,7 +419,7 @@ footer {
 
 	50% {
 
-		border-top-color: #728bae;
+		border-top-color: #9572ae;
 	}
 
 	100% {
