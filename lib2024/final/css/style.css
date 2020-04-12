@@ -92,7 +92,6 @@ font-family: 'Noto Sans', sans-serif;
 a {
 	display: inline-block;
 	text-decoration: none;
-	padding: 5px;
 }
 
 h2 {
@@ -106,9 +105,6 @@ thead {
 	color: #72a9ae;
 }
 
-.foot-text {
-	color: #ffffff;
-}
 
 h4 {
 	color: #ffffff;
@@ -148,11 +144,10 @@ h4 {
 }
 
 .desktop-nav ul {
-	width: 50%
+	width: 100%
 }
 
 .desktop-nav li {
-	max-width: 20%
 	float: left;
 	box-sizing: border-box;
 	position: relative;
@@ -176,6 +171,8 @@ h4 {
 	box-sizing: border-box;
 	width: 20%;
 	padding: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
 	color: #000000;
 }
 
@@ -270,24 +267,18 @@ body {
 
 .main-section {
 	float: left;
-	width: 70%;
-	padding: 25px;
+	width: 63%;
+	padding: 20px;
 	box-sizing: border-box;
 }
+
 
 #img-aside: {
 	float: left;
 	width: 30%;
 	padding: 20px;
+	margin-top: 50px;
 	box-sizing: border-box;
-}
-
-.schedule-section {
-	width: 100%; 
-}
-
-.sched-table {
-	float: center;
 }
 
 
@@ -295,9 +286,16 @@ body {
 /*Schedule Table*/
 
 .schedule-section {
+	width: 100%;
 	float: left;
 	padding: 10px;
 }
+
+
+.sched-table {
+	float: center;
+}
+
 
 table { 
 
@@ -329,6 +327,7 @@ table, th, td {
 	float: left;
 	box-sizing: border-box;
 	padding: 10px;
+	padding-left: 50px;
 	width: 50%;
 
 }
@@ -347,29 +346,38 @@ table, th, td {
 	float: left;
 	box-sizing: border-box;
 	padding: 20px;
+	padding-right: 50px;
 	width: 50%;
 
 }
 
 
-
-
 /*Footer Styles*/
 
-footer {
-	background: #454545;
+.footer-container {
 	width: 100%;
+	box-sizing: border-box;
+	background: #454545;
 }
 
 .col-footer {
 	width: 31%;
-	box-sizing: border-box;
-	margin: 0 1%;
-	padding: 10px;
 	float: left;
-	position: relative;
+	margin: 0 1%;
+	box-sizing: border-box;
+	padding: 10px;
+	padding-left: 60px;
+	color: white;
 }
 
+.quick-links a {
+	color: white;
+}
+
+.social-media a {
+	margin-left: -120px;
+	padding: 5px;
+}
 
 
 /*Loader animation*/
@@ -462,7 +470,7 @@ footer {
 
     	header, main, footer {
 
-    		max-width: 1280px;
+    		max-width: 1024px;
     		margin: 0 auto;
     	}
 
