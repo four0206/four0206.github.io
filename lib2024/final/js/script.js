@@ -21,7 +21,7 @@ function init() {
 		   		 // fadeOut is a jQuery function to fadeOut an element 
    		 		$('.overlay-container').delay(500).fadeOut(500);
    		 		$("#fresults").addClass('reveal');
-   		 })
+   		 });
 	});
 
 }
@@ -62,6 +62,6 @@ function showformValues(form){
 		if(field.name=="email"){
 			$("#fresults").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
 		}
-	})				
+	});				
 }
 
