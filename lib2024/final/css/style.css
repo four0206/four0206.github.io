@@ -122,9 +122,11 @@ h4 {
 ************************/
 
 /*Major containers set to 100% width to achieve Fluid Layout*/
-.col-main-article, .col-footer, .mobile-img {
-	width:100%;
+.col-main-article, .col-footer, .mobile-img, .mobile-transf {
+	max-width:100%;
 }
+
+
 
 .logo {
 	float: left; 
@@ -193,7 +195,7 @@ h4 {
 	cursor: pointer;
 }
 
-	.mob-bars, .mob-bars:before, .mob-bars:after {
+	.mob-bars {
 		width: 30px;
 		border-top: 5px solid teal;
 
@@ -219,6 +221,7 @@ h4 {
 	clear: both;
 	position: absolute;
 	display: none;
+	z-index: 1;
 }
 
 .mobile-nav-container {
@@ -226,7 +229,7 @@ h4 {
 	clear: both;
 }
 
-.mobile-nav li a{
+.mobile-nav li a {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 10px;
@@ -234,6 +237,10 @@ h4 {
 	border-bottom: 2px solid #ffffff;
 	border-left: 2px solid #ffffff;
 	color: #000000;
+}
+
+.mobile-img {
+	position: relative;	
 }
 
 
@@ -267,18 +274,20 @@ body {
 
 .main-section {
 	float: left;
-	width: 63%;
+	width: 57%;
 	padding: 20px;
+	margin-top: -20px;
 	box-sizing: border-box;
 }
 
 
-#img-aside: {
-	float: left;
-	width: 30%;
+.ostrich-img img {
+	width: 43%;
 	padding: 20px;
-	margin-top: 50px;
+	margin-top: 35px;
 	box-sizing: border-box;
+	position: relative;
+	float: left;
 }
 
 
@@ -293,15 +302,15 @@ body {
 
 
 .sched-table {
-	float: center;
+	float: none;
 }
 
 
 table { 
 
 width: 100%;
-padding-left:-10px;
-padding-right: -10px;
+margin-left: -10px;
+margin-right: -10px;
 text-align: center;
 box-sizing: border-box;
  }
@@ -328,41 +337,95 @@ table, th, td {
 	box-sizing: border-box;
 	padding: 10px;
 	padding-left: 50px;
-	width: 50%;
+	width: 40%;
 
 }
 
-.form-info {
-	max-width: 500px;
-	clear: both;
-}
-
-.form-info input {
+.form-elem {
 	width: 100%;
-	clear: both;
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+
+label {
+	float: left;
+	box-sizing: border-box;
+	position: relative;
+}
+
+input, select {
+	float: right;
+	box-sizing: border-box;
+	position: relative;
+}
+
+
+#submit {
+	max-width: 100%;
+	float: right;
+	box-sizing: border-box;
+	position: relative;
+	margin: 15px;
+}
+
+.profile-h2 {
+	position: relative;
+	box-sizing: border-box;
+	float: left;
+	padding-bottom: 10px;
+	padding: 5px;
+	padding-left: 90px;
+	margin-left: 145px; 
 }
 
 .profile-transf {
-	float: left;
+	width: 30%;
+	float: right;
 	box-sizing: border-box;
-	padding: 20px;
-	margin-left: 120px;
-	background-color: pink;
+	padding: 15px;
+	text-align: center;
+	border: 10px;
+	margin-bottom: 20px;
+	margin-right: 60px;
+	box-shadow: 4px 4px 10px rgba(0,0,0,.5);
+	background: #ffffff;
 
 }
 
+
 .profile-transf img {
 
-	border-radius: 100%;
+	border-radius: 50%;
 	max-width: 300px;
 	max-height: 165px;
 }
 
+#name_result {
+	font-weight: bold;
+	color: #72a9ae;
+	padding-top: 20px;
+}
+
+#email_result {
+	color: #000000;
+}
+
+.far {
+	margin-top: 10px;
+	color: #72a9ae;
+	font-size: 150%;
+}
 
 /*Footer Styles*/
 
 .footer-container {
 	width: 100%;
+	padding: 30px;
 	box-sizing: border-box;
 	background: #454545;
 }
@@ -382,8 +445,14 @@ table, th, td {
 }
 
 .social-media a {
-	margin-left: -120px;
-	padding: 5px;
+	margin-left: -110px;
+}
+
+
+.fab {
+
+	color: #ffffff;
+	font-size: 175%;
 }
 
 
