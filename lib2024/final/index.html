@@ -89,8 +89,8 @@
 
 			<!--Image Aside Code Begins Here-->
 			<aside id="img-aside">
-				<div class="ostrich-img">
-					<img src="img/ostrich.jpg" alt="Image of Ostrich Face" width="330px" height="230px">
+				<div class="ostrich-img mobile-img">
+					<img src="img/ostrich.jpg" alt="Image of Ostrich Face">
 				</div>
 			</aside>
 			<!--End of Image Aside-->
@@ -153,34 +153,34 @@
 					<h2>EDIT PROFILE</h2>
 					<form id="form" action="submit.php" method="post">
 						<!--Name Input-->
-						<p>
+						<p class="form-elem">
 							<label for="name">Name:</label>
 							<input type="text" name="name" id="name" placeholder="Ollie Ostrich" required>
 						</p>
 
 						<!--Email Input-->
-						<p>
+						<p class="form-elem"> 
 							<label for="email">Email:</label>
 							<input type="email" name="email" id="email" placeholder="ollieostrich@outlook.com" required>
 						</p>
 
 						<!--Address Input-->
-						<p>
+						<p class="form-elem">
 							<label for="address">Address:</label>
 							<input type="text" name="address" id="address" placeholder="6969 Avian Alley" required>
 						</p>
 
 						<!--City Input-->
-						<p>
+						<p class="form-elem">
 							<label for="city">City:</label>
 							<input type="text" name="city" id="city" placeholder="Pigeon Island" required>
 						</p>
 
 						<!--Province Input-->
-						<p>
+						<p class="form-elem">
 							<label for="province">Province:</label>
 							<select name="province" id="province" required>
-								<option value="default">Select Province</option>
+								<option value="">Select Province</option>
 								<option value="BC">British Columbia</option>
 								<option value="AB">Alberta</option>
 								<option value="SK">Saskatchewan</option>
@@ -197,20 +197,20 @@
 						</p>
 
 						<!--Postal Code Input-->
-						<p>
+						<p class="form-elem">
 							<label for="postal">Postal Code:</label>
-							<input type="text" name="postal" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="postal" id="postal" placeholder="Q0Q O3O" required>
+							<input type="text" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="postal" id="postal" placeholder="Q0Q O3O" required>
 						</p>
 
 						<!--Submit Button-->
-						<button type="submit">Submit</button>
+						<button type="submit" id="submit">Submit</button>
 					</form>
 				</div>
 			</section>
 
 			<!--Profile Transfer Code Begins Here-->
-			<section class="profile-transf clearfix text">
-				<h2>PROFILE INFO</h2>
+			<h2 class="profile-h2">PROFILE INFO</h2>
+			<section class="profile-transf mobile-transf clearfix">
 				<div id="fresults">
 					<img src="img/ostrich2.jpg" alt="Surprised Ostrich Profile Picture">
 
@@ -225,6 +225,8 @@
 
 					<!--Province and Postal Code Result-->
 					<p><span id="province_result"></span>&#44;&#160;<span id="postal_result"></span></p>
+
+					<i class="far fa-envelope"></i>
 				</div>	
 			</section>
 			<!--Profile Section Ends-->
