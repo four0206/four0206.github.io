@@ -195,23 +195,23 @@ h4 {
 	cursor: pointer;
 }
 
-	.mob-bars {
+	.mob-bars, .mob-bars:before, .mob-bars:after {
 		width: 30px;
 		border-top: 5px solid teal;
 
 	}
 
-	.mob-bars:before {
+	.mob-bars: before {
 		content: "";
 		display: block;
 		position: absolute;
-		background: teal;
+		border-top: 5px solid teal;
 	}
 
 	.mob-bars:after {
 		content: "";
 		display: block;
-		background: #72a9ae;
+		border-bottom:: 5px solid teal;
 		position: absolute;
 		bottom: 0;
 	}
@@ -310,7 +310,7 @@ table {
 
 width: 100%;
 margin-left: -10px;
-margin-right: -10px;
+margin-right-right: -10px;
 text-align: center;
 box-sizing: border-box;
  }
