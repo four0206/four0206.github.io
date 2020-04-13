@@ -144,7 +144,7 @@ h4 {
 }
 
 .desktop-nav ul {
-	width: 100%
+	width: 100%;
 }
 
 .desktop-nav li {
@@ -346,9 +346,16 @@ table, th, td {
 	float: left;
 	box-sizing: border-box;
 	padding: 20px;
-	padding-right: 50px;
-	width: 50%;
+	margin-left: 120px;
+	background-color: pink;
 
+}
+
+.profile-transf img {
+
+	border-radius: 100%;
+	max-width: 300px;
+	max-height: 165px;
 }
 
 
